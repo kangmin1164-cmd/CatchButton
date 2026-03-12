@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            Catch_Button = new Button();
             SuspendLayout();
             // 
-            // button1
+            // Catch_Button
             // 
-            button1.BackColor = Color.FromArgb(128, 255, 255);
-            button1.Font = new Font("한컴 고딕", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            button1.ForeColor = Color.Navy;
-            button1.Location = new Point(341, 164);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 68);
-            button1.TabIndex = 0;
-            button1.Text = "나를 잡아봐";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            Catch_Button.BackColor = Color.FromArgb(128, 255, 255);
+            Catch_Button.Font = new Font("한컴 고딕", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            Catch_Button.ForeColor = Color.Navy;
+            Catch_Button.Location = new Point(341, 164);
+            Catch_Button.Name = "Catch_Button";
+            Catch_Button.Size = new Size(150, 68);
+            Catch_Button.TabIndex = 0;
+            Catch_Button.Text = "나를 잡아봐";
+            Catch_Button.UseVisualStyleBackColor = false;
+            Catch_Button.Click += Catch_Button_Click;
+            Catch_Button.MouseEnter += Catch_Button_MouseEnter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(Catch_Button);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -58,6 +59,6 @@
 
         #endregion
 
-        private Button button1;
+        private Button Catch_Button;
     }
 }
