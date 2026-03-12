@@ -14,6 +14,7 @@ namespace CatchButton
 
         private void Catch_Button_MouseEnter(object sender, EventArgs e)
         {
+
             //1. 난수생성기 준비
             Random rd = new Random();
 
@@ -38,5 +39,23 @@ namespace CatchButton
             this.Text = $"버튼위치: ({nextX}, {nextY}) | 제한 범위: {maxX}, {maxY}";
 
         }
+
+        // 2. 마우스를 누르는 순간 잡는 기능 (MouseDown은 MouseEventArgs를 사용!)
+        private void Catch_Button_MouseDown(object sender, MouseEventArgs e)
+        {
+            // 왼쪽 혹은 오른쪽 버튼 클릭 시 작동
+            if (e.Button == MouseButtons.Left || e.Button == MouseButtons.Right)
+            {
+                System.Media.SystemSounds.Asterisk.Play();
+                MessageBox.Show("마우스 클릭으로 잡기 성공!", "성공");
+            }
+        }
+
+        private void Catch_Button_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
+
+
