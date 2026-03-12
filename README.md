@@ -14,6 +14,9 @@
 
 
 -3단계코드의실행스크린샷(여기에이미지삽입)
+<img width="801" height="474" alt="image" src="https://github.com/user-attachments/assets/3644d63d-370f-4a8c-9ddb-dfa3029ee2b6" />
+
+<img width="796" height="478" alt="image" src="https://github.com/user-attachments/assets/5145c4a7-768f-4e2d-aa56-59e8bdbb38e7" />
 
 -4단계코드의실행스크린샷(여기에이미지삽입)
 
