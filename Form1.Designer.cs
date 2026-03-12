@@ -36,9 +36,9 @@
             Catch_Button.BackColor = Color.FromArgb(128, 255, 255);
             Catch_Button.Font = new Font("한컴 고딕", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
             Catch_Button.ForeColor = Color.Navy;
-            Catch_Button.Location = new Point(341, 164);
+            Catch_Button.Location = new Point(219, 135);
             Catch_Button.Name = "Catch_Button";
-            Catch_Button.Size = new Size(137, 62);
+            Catch_Button.Size = new Size(203, 110);
             Catch_Button.TabIndex = 0;
             Catch_Button.Text = "나를 잡아봐";
             Catch_Button.UseVisualStyleBackColor = false;
