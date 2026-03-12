@@ -38,17 +38,17 @@
             Catch_Button.ForeColor = Color.Navy;
             Catch_Button.Location = new Point(341, 164);
             Catch_Button.Name = "Catch_Button";
-            Catch_Button.Size = new Size(150, 68);
+            Catch_Button.Size = new Size(137, 62);
             Catch_Button.TabIndex = 0;
             Catch_Button.Text = "나를 잡아봐";
             Catch_Button.UseVisualStyleBackColor = false;
-            Catch_Button.Click += Catch_Button_Click;
             Catch_Button.MouseEnter += Catch_Button_MouseEnter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(Catch_Button);
             Name = "Form1";
