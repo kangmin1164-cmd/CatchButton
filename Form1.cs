@@ -30,6 +30,9 @@ namespace CatchButton
                 score -= 10;  //도망갔으므로 10점 감점
                 missCount++; // 놓친 횟수 증가
 
+                // [추가] 놓쳤을 때 시스템 효과음 재생 (Hand: 시스템 중단/오류 소리)
+                System.Media.SystemSounds.Hand.Play();
+
                 //1. 난수생성기 준비
                 Random rd = new Random();
 
@@ -104,6 +107,7 @@ namespace CatchButton
                 Catch_Button.Size = new Size(newWidth, newHeight);
             }
 
+            //잡았을때 윈도우 효과음
             System.Media.SystemSounds.Asterisk.Play();
 
             // 폼 제목 업데이트
