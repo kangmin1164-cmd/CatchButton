@@ -18,9 +18,13 @@ namespace CatchButton
             Random rd = new Random();
 
             //2. 가용 영역 계산(버튼이 폼 테두리에 걸리지 않게 보호)
-            //ClientSize는 타이틀 바와 테두리를 제외한 실제 흰 도화지 영역임
-            int maxX = this.ClientSize.Width;
-            int maxY = this.ClientSize.Height;
+            //ClientSize(도화지 영역)에서 버튼의 너비와 높이를 빼줌.
+            int maxX = this.ClientSize.Width- Catch_Button.Width;
+            int maxY = this.ClientSize.Height- Catch_Button.Height;
+
+            //만약 창이 너무 작아서 maxX나 maxY가 0보다 작아질 경우를 대비하여 안전장치
+            if(maxX < 0 ) maxX = 0;
+            if(maxY < 0 ) maxY = 0;
 
             // 3. 랜덤좌표추출(0 ~ 최대가용치사이)
             int nextX = rd.Next(0, maxX);
@@ -31,7 +35,7 @@ namespace CatchButton
 
             // 5. 시각적피드백(폼제목표시줄에좌표출력)
             // this가 Form1을 가리킴
-            this.Text = $"버튼위치: ({nextX}, {nextY})";
+            this.Text = $"버튼위치: ({nextX}, {nextY}) | 제한 범위: {maxX}, {maxY}";
 
         }
     }
